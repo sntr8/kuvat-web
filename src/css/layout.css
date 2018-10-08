@@ -1,19 +1,12 @@
-<?php
-    $bg = array('./bg/hkg-central.jpg', './bg/160611_possu_reunasaari.jpg', './bg/IMG_4473.jpg', './bg/IMG_8955.jpg');
-    $i = rand(0, count($bg)-1);
-    $selectedBg = "$bg[$i]";
-?>
-
 body {
-    background-image: url(<?php echo $selectedBg; ?>);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
 }
 
 #grey {
-    background: rgba(70, 72, 82, 0.5);
-    width: 600px;
+    background: rgba(70, 72, 82, 0.7);
+    width: 1000px;
     height: 300px;
     border-radius: 50px;
     position: absolute;
@@ -30,6 +23,17 @@ body {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+}
+
+#social {
+    position: absolute;
+    margin: 0 auto;
+    bottom: 30px;
+    width: 100%;
+}
+
+#buttons {
+    margin-left: 35.5%;
 }
 
 .fa {
